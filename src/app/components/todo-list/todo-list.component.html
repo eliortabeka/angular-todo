@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let item of listToDisplay">
+    <app-todo-item
+      (deleteThisItem$)="deleteItem($event)" [itemToDisplay]="item"></app-todo-item>
+  </li>
+</ul>
